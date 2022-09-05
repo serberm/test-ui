@@ -1,0 +1,260 @@
+{
+  "entities": [
+    {
+      "id": "c07b8f99-8909-44ae-983a-30a2a95296c9",
+      "entity_id": null,
+      "name": "Qemoa Holding GmbH",
+      "entityTypes": [
+        "TOP_LEVEL"
+      ]
+    },
+    {
+      "id": "a896a576-6a2d-4416-91a1-9befbb85f705",
+      "entity_id": null,
+      "name": "KTP V Services Holdings III Limited",
+      "entityTypes": [
+        "TOP_LEVEL"
+      ]
+    },
+    {
+      "id": "ac36b0ba-8389-47f9-a38a-c2b89dc78eab",
+      "entity_id": null,
+      "name": "EFF Group Limited",
+      "entityTypes": [
+        "TOP_LEVEL"
+      ]
+    },
+    {
+      "id": "5eaddbcf-a9f6-467b-9245-50946ab96528",
+      "entity_id": null,
+      "name": "EngineTec GmbH",
+      "entityTypes": [
+        "TOP_LEVEL"
+      ]
+    },
+    {
+      "id": "2d9bf5f3-52e5-45b3-a771-1157ba5e108b",
+      "name": "Qemoa Holding GmbH",
+      "entity_id": "c07b8f99-8909-44ae-983a-30a2a95296c9",
+      "entityTypes": [
+        "SUBSIDIARY"
+      ]
+    },
+    {
+      "id": "2d9bf5f3-52e5-45b3-a771-1157ba5e108b",
+      "name": "KTP V Services Holdings IV Limited",
+      "entity_id": "a896a576-6a2d-4416-91a1-9befbb85f705",
+      "entityTypes": [
+        "SUBSIDIARY"
+      ]
+    },
+    {
+      "id": "32ec6886-02b8-45fc-89f0-f6f45faa240a",
+      "entity_id": "a896a576-6a2d-4416-91a1-9befbb85f705",
+      "name": "KTP III Services Holdings V Limited",
+      "entityTypes": [
+        "SUBSIDIARY"
+      ]
+    },
+    {
+      "id": "45b307e8-16a2-4316-8b5a-aa75b7f1ad55",
+      "entity_id": "ac36b0ba-8389-47f9-a38a-c2b89dc78eab",
+      "name": "QSG GROUP AUSTRALIA PTY LTD",
+      "entityTypes": [
+        "SUBSIDIARY"
+      ]
+    },
+    {
+      "id": "82130097-5708-4faf-8dc0-c67c767663de",
+      "entity_id": "ac36b0ba-8389-47f9-a38a-c2b89dc78eab",
+      "name": "EFF Group Limited\n",
+      "entityTypes": [
+        "SUBSIDIARY"
+      ]
+    },
+    {
+      "id": "issuer-6",
+      "entity_id": "ac36b0ba-8389-47f9-a38a-c2b89dc78eab",
+      "name": "EFF Group Limited\n",
+      "entityTypes": [
+        "SUBSIDIARY"
+      ]
+    },
+    {
+      "id": "ebd625ce-95a6-4ba6-8c42-0e47f85107b8",
+      "entity_id": "ac36b0ba-8389-47f9-a38a-c2b89dc78eab",
+      "name": "QSG GROUP ASIA PTY LTD",
+      "entityTypes": [
+        "SUBSIDIARY"
+      ]
+    },
+    {
+      "id": "b281e53e-addb-4478-85c1-e80b4daadd41",
+      "entity_id": "5eaddbcf-a9f6-467b-9245-50946ab96528",
+      "name": "EngineTec BidCo LLC",
+      "entityTypes": [
+        "SUBSIDIARY"
+      ]
+    },
+    {
+      "id": "a028f306-919c-4443-852d-e811341ca897",
+      "entity_id": "5eaddbcf-a9f6-467b-9245-50946ab96528",
+      "name": "EngineTec BidCo 3 LLC",
+      "entityTypes": [
+        "SUBSIDIARY"
+      ]
+    },
+    {
+      "id": "aee15df4-292b-4b25-8434-a4ff4151b689",
+      "entity_id": "5eaddbcf-a9f6-467b-9245-50946ab96528",
+      "name": "EngineTec BidCo 2 LLC",
+      "entityTypes": [
+        "SUBSIDIARY"
+      ]
+    }
+  ],
+  "agreements": [
+    {
+      "id": "c01f4ab1-17c4-4af6-b139-d92412c1ad87",
+      "entity_id": "2d9bf5f3-52e5-45b3-a771-1157ba5e108b",
+      "tranche": "A",
+      "privateItem_id": "1feb03ea-20ac-4d2c-9472-e3d593907460",
+      "maturityDate": "2024-05-17",
+      "agreementSize": "1030000000000000000",
+      "currency": "EUR",
+      "type": "TYPE_A"
+    },
+    {
+      "id": "336a1077-609a-4aac-ab03-69d91c17917f",
+      "entity_id": "2d9bf5f3-52e5-45b3-a771-1157ba5e108b",
+      "tranche": "B",
+      "privateItem_id": "fc9c1ba6-cb9a-470b-9707-eeefa7761592",
+      "maturityDate": "2019-09-18",
+      "agreementSize": "1230000000000000000",
+      "currency": "GBP",
+      "type": "TYPE_C"
+    },
+    {
+      "id": "5091e309-edd7-4516-8577-631206ec0cf8",
+      "entity_id": "32ec6886-02b8-45fc-89f0-f6f45faa240a",
+      "tranche": "B",
+      "privateItem_id": "7849798a-aa67-42e9-b77e-ed469fbb16dc",
+      "maturityDate": "2024-09-01",
+      "agreementSize": "500000000000000000",
+      "currency": "GBP",
+      "type": "TYPE_A"
+    },
+    {
+      "id": "0ac40f17-bc22-4ad2-b8f8-f312e0de147b",
+      "entity_id": "45b307e8-16a2-4316-8b5a-aa75b7f1ad55",
+      "tranche": "D",
+      "privateItem_id": "369e28f4-9d04-4602-98d7-2e828e678bc0",
+      "maturityDate": "2029-01-10",
+      "agreementSize": "923490000000000000",
+      "currency": "USD",
+      "type": "TYPE_B"
+    },
+    {
+      "id": "43f7da2a-1062-48c3-aa57-867b2145964f",
+      "entity_id": "82130097-5708-4faf-8dc0-c67c767663de",
+      "tranche": "D",
+      "privateItem_id": "1b04e985-8ba4-46ac-85e8-061f37914df3",
+      "maturityDate": "2029-01-10",
+      "agreementSize": "923490000000000000",
+      "currency": "USD",
+      "type": "TYPE_A"
+    },
+    {
+      "id": "190a644e-09b7-48de-9dda-f7474df4e619",
+      "entity_id": "82130097-5708-4faf-8dc0-c67c767663de",
+      "tranche": "D",
+      "privateItem_id": "a4a46e4a-b05c-4276-bcf4-23e7fc95b558",
+      "maturityDate": "2022-01-01",
+      "agreementSize": "923490000000000000",
+      "currency": "USD",
+      "type": "TYPE_A"
+    },
+    {
+      "id": "8178c5fa-1db8-474b-9730-1770b92a081a",
+      "entity_id": "ebd625ce-95a6-4ba6-8c42-0e47f85107b8",
+      "tranche": "D",
+      "privateItem_id": "a897d2b4-975e-4947-b443-6b859765c1eb",
+      "maturityDate": "2024-01-31",
+      "agreementSize": "1230000000000000",
+      "currency": "USD",
+      "type": "TYPE_A"
+    },
+    {
+      "id": "2eb3d059-859b-4c51-bb69-cc5ce426d187",
+      "entity_id": "b281e53e-addb-4478-85c1-e80b4daadd41",
+      "tranche": "D",
+      "privateItem_id": "7cf5653a-834e-452d-a65a-582b57b99b6f",
+      "maturityDate": "2020-01-10",
+      "agreementSize": "99000000000000000",
+      "currency": "USD",
+      "type": "TYPE_A"
+    },
+    {
+      "id": "2b27e886-dd75-449a-aac5-074970626401",
+      "entity_id": "a028f306-919c-4443-852d-e811341ca897",
+      "tranche": "D",
+      "privateItem_id": "11f03ee6-f3df-4de2-ba5c-4e63c6106622",
+      "maturityDate": "2025-05-11",
+      "agreementSize": "3490000000000000000",
+      "currency": "GBP",
+      "type": "TYPE_C"
+    },
+    {
+      "id": "290c8d35-bf46-49b3-ab99-8e66e786d004",
+      "entity_id": "aee15df4-292b-4b25-8434-a4ff4151b689",
+      "tranche": "D",
+      "privateItem_id": "f8766f48-7475-46d6-8d26-f08121aeeb34",
+      "maturityDate": "2025-05-01",
+      "agreementSize": "23490000000000000",
+      "currency": "GBP",
+      "type": "TYPE_C"
+    }
+  ],
+  "privateItems": [
+    {
+      "id": "1feb03ea-20ac-4d2c-9472-e3d593907460",
+      "private": false
+    },
+    {
+      "id": "fc9c1ba6-cb9a-470b-9707-eeefa7761592",
+      "private": false
+    },
+    {
+      "id": "7849798a-aa67-42e9-b77e-ed469fbb16dc",
+      "private": false
+    },
+    {
+      "id": "369e28f4-9d04-4602-98d7-2e828e678bc0",
+      "private": false
+    },
+    {
+      "id": "1b04e985-8ba4-46ac-85e8-061f37914df3",
+      "private": false
+    },
+    {
+      "id": "a4a46e4a-b05c-4276-bcf4-23e7fc95b558",
+      "private": false
+    },
+    {
+      "id": "a897d2b4-975e-4947-b443-6b859765c1eb",
+      "private": false
+    },
+    {
+      "id": "7cf5653a-834e-452d-a65a-582b57b99b6f",
+      "private": false
+    },
+    {
+      "id": "11f03ee6-f3df-4de2-ba5c-4e63c6106622",
+      "private": true
+    },
+    {
+      "id": "f8766f48-7475-46d6-8d26-f08121aeeb34",
+      "private": true
+    }
+  ]
+}

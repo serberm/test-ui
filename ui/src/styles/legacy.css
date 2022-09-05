@@ -1,0 +1,628 @@
+/* TODO: get rid of this file */
+
+body, html {
+    font-family: "Quicksand", Arial, Tahoma, sans-serif;
+    font-size: 14px;
+    color: #e8e8e8;
+    background: #1d2b3c;
+    height: 100%;
+}
+
+th, td {
+    font-size: 12px;
+}
+
+/* Remove spinner from input fields */
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Remove spinner from input fields */
+
+#app {
+    height: 100%;
+}
+
+a {
+    cursor: pointer;
+}
+
+.error-screen {
+    z-index: 100000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.error-screen .error-message {
+    background-color: white;
+    color: black;
+    padding: 25px;
+    border-radius: 10px;
+    width: 350px;
+    font-size: larger;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+h4 {
+    display: inline-block
+}
+
+.is-invalid input {
+    box-shadow: 0 0 0 2px var(--danger);
+    border-radius: 4px;
+    outline: none;
+}
+
+.modal {
+    z-index: 10000000;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow-y: auto;
+    display: unset;
+}
+
+.modal-dialog {
+    margin-top: 69px;
+}
+
+.modal-content {
+    background: #1d2b3c;
+}
+
+.modal-header .modal-close {
+    color: #e8e8e8;
+}
+
+.modal-header .float-right {
+    min-width: 200px;
+    text-align: right;
+}
+
+.modal-header .float-right button {
+    margin-left: 0.5rem;
+}
+
+.header-container {
+    background-color: var(--control-bg);
+}
+
+.header {
+    border-bottom: #1d2b3c solid 1px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.header .logo {
+    height: 38px;
+    width: 216px;
+    float: left;
+}
+
+.header-options .inactive {
+    color: var(--text-secondary);
+    margin-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.header-options .inactive:hover {
+    color: var(--primary);
+}
+
+.header-options .active {
+    color: var(--primary);
+    margin-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: var(--primary) solid 2px;
+}
+
+.app-body {
+    height: calc(100% - 155px);
+    overflow: auto;
+    padding-top: 10px;
+}
+
+table {
+    background-color: unset !important;
+}
+
+table tbody {
+    background-color: var(--table-bg);
+}
+
+table th {
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--text-secondary);
+}
+
+table td {
+    color: #e8e8e8;
+}
+
+.nav-tabs {
+    border-bottom: 2px solid var(--divider);
+}
+
+.nav-tabs .nav-link {
+    margin-right: 2rem;
+    border: none;
+    color: var(--text-secondary);
+}
+
+.nav.nav-tabs .nav-item {
+    margin-bottom: -2px;
+}
+
+.nav.nav-tabs .nav-item, .nav.nav-tabs .nav-link {
+    background-color: transparent;
+}
+
+.nav.nav-tabs .nav-link {
+    padding-bottom: 8px;
+    border-bottom: 2px solid transparent;
+}
+
+.nav.nav-tabs .nav-link:not(.active):focus, .nav.nav-tabs .nav-link:not(.active):hover {
+    border-color: transparent;
+}
+
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link.active {
+    color: var(--primary);
+}
+
+.nav-tabs .nav-link.active {
+    transition: 0.2s ease border-color;
+    border-color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border-color: initial
+}
+
+.coupon-spread-display div div span {
+    font-size: 30px;
+    color: lightgreen;
+    display: inline-block;
+    text-align: center;
+}
+
+table th, table td {
+    border-color: #1d2b3c !important;
+    border-width: 4px !important;
+}
+
+.nav {
+    display: inline-flex;
+    margin-top: 2rem;
+}
+
+.table-slim {
+    margin: 0;
+}
+
+.table-cell-vertical-align-middle td {
+    vertical-align: middle;
+}
+
+.app-content .active-row {
+    background-color: #2c4460;
+}
+
+.app-content .row-options {
+    float: right;
+    cursor: pointer;
+}
+
+.app-content .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    background-color: black;
+    color: #e8e8e8;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    margin-top: 5px;
+    z-index: 1;
+}
+
+.app-content a {
+    color: #e8e8e8;
+}
+
+.app-content a:hover {
+    color: var(--primary);
+}
+
+.app-content tr:hover a:hover {
+    text-decoration: unset;
+}
+
+.app-content a:hover .tooltiptext {
+    visibility: visible;
+}
+
+.app-content .details-name-col {
+    width: 300px;
+}
+
+.app-content .details-name-col-small {
+    width: 150px;
+}
+
+.app-content .details-value-col {
+    position: relative;
+    padding: 8px !important;
+}
+
+.app-content .details-value-col-50ptc {
+    width: 50%;
+}
+
+.app-content input {
+    border: none;
+    background-color: var(--control-bg);
+    color: #e8e8e8;
+    width: 100%;
+    padding: 11px;
+}
+
+.app-content input:disabled {
+    opacity: 0.65;
+}
+
+.app-content input::placeholder {
+    color: #46586e;
+}
+
+.app-content input[type="checkbox"] {
+    width: 30px;
+}
+
+tbody th {
+    vertical-align: middle!important;
+}
+
+.coupon-input {
+    width: 15%;
+}
+
+.app-content select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    background-color: var(--control-bg);
+    color: #e8e8e8;
+    width: 100%;
+    padding: 9px;
+}
+
+.app-content .dropdown button {
+    width: 100%;
+    text-align: left;
+    border: none;
+    border-radius: unset;
+    background-color: var(--control-bg);
+    color: #e8e8e8;
+    padding: 9px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.app-content .dropdown option {
+    width: 100%;
+    text-align: left;
+    border: none;
+    border-radius: unset;
+    background-color: var(--control-bg);
+    color: #e8e8e8;
+    padding: 9px;
+}
+
+.app-content .dropdown .dropdown-toggle::after {
+    margin-top: 9px;
+    float: right;
+}
+
+.app-content .dropdown .dropdown-toggle-on::after {
+    -ms-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+.app-content .dropdown .dropdown-menu {
+    padding: unset;
+    background-color: var(--control-bg);
+    border: #e8e8e8 solid 1px;
+    border-radius: unset;
+    width: auto;
+}
+
+.app-content .dropdown .drop-up {
+    top: unset;
+    bottom: 100%;
+    left: 11px;
+}
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px var(--control-bg) inset !important;
+    -webkit-text-fill-color: white !important;
+}
+
+input:-internal-autofill-selected {
+    color: inherit;
+}
+
+.app-content .dropdown .dropdown-menu-free-width-right {
+    width: unset;
+    left: unset;
+    right: 0;
+}
+
+.small-icon {
+    position: relative;
+    width: 30px;
+}
+
+.app-content .details-value-col .input-icon-delete {
+    cursor: pointer;
+    color: red;
+    padding: 7px;
+    float: right;
+    background: 0;
+    border: 0;
+}
+
+.app-content .details-value-col .input-icon-search {
+    display: inline-block;
+    cursor: pointer;
+    padding: 7px;
+}
+
+.app-content .details-clickable-col {
+    cursor: pointer;
+}
+
+.app-content .dropdown .dropdown-loading {
+    margin: 9px;
+}
+
+.app-content .bank-account-details .dropdown-short {
+    width: calc(100% - 70px);
+    display: inline-block;
+}
+
+.app-content .bank-account-details .dropdown-toggle {
+    padding: 9px;
+    max-width: 20%;
+}
+
+.app-content .bank-account-details .btn-dropdown-placeholder {
+    color: #686868;
+}
+
+.page-title {
+    margin: 3rem;
+}
+
+.transparent-confirm-button {
+    background-color: unset;
+    border: 1px solid cyan;
+    color: cyan;
+    border-radius: 3px;
+    font-size: 1rem;
+    width: 6rem;
+    margin: 0.5rem;
+    float: right;
+}
+
+.transparent-confirm-button-kyc {
+    background-color: unset;
+    border-radius: 3px;
+    float: right;
+}
+
+.transparent-reject-button {
+    background-color: unset;
+    border: 1px solid rgb(223, 4, 4);
+    color: rgb(223, 4, 4);
+    border-radius: 3px;
+    font-size: 1rem;
+    width: 6rem;
+    margin: 0.5rem;
+    float: right;
+}
+
+.transparent-view-button {
+    background-color: unset;
+    border: 1px solid rgb(233, 162, 10);
+    color: rgb(233, 162, 10);
+    border-radius: 3px;
+    font-size: 1rem;
+    width: 6rem;
+    margin: 0.5rem;
+    float: right;
+}
+
+.transparent-read-button {
+    background-color: unset;
+    border: 1px solid rgb(127, 5, 226);
+    color: rgb(127, 5, 226);
+    border-radius: 3px;
+    font-size: 1rem;
+    width: 6rem;
+    margin: 0.5rem;
+    float: right;
+}
+
+.fontMenu {
+    padding: 0px !important;
+}
+
+.signature-button {
+    margin-bottom: 6px;
+    margin-right: 6px;
+    display: inline-block
+}
+
+.vertical-signature-menu {
+    overflow-y: auto;
+    position: relative;
+}
+
+.font-preview {
+    position: relative;
+    height: 7vw;
+    width: 100%;
+    cursor: pointer;
+    background-color: white;
+}
+
+.font-preview div {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    color: black;
+}
+
+.vertical-signature-menu div:hover {
+    background-color: #ccc;
+}
+
+.vertical-signature-menu div.active {
+    background-color: #4caf50;
+    color: white;
+}
+
+.notification-container {
+    margin: 1% 1vh 1% 1vh;
+}
+
+.padding-twenty {
+    padding-bottom: 20px;
+}
+
+.agreement-view-button:hover {
+    cursor: pointer;
+    background-color: var(--control-bg);
+}
+
+.agreement-view-button:active {
+    background-color: var(--control-bg);
+    transform: translateY(4px);
+}
+
+.div-table-color {
+    background-color: #29354c;
+    padding: 1rem;
+    border: none !important;
+    margin-bottom: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+}
+
+.table-color {
+    background-color: var(--control-bg);
+}
+
+.hide {
+    display: none;
+}
+
+.btn, .dropdown-menu {
+    font-size: inherit;
+}
+
+.drop-down-component {
+    table-layout: fixed;
+}
+
+.drop-down-component div {
+    overflow: hidden;
+    clear: left;
+    width: 100%;
+}
+
+.drop-down-component div div {
+    display: none;
+}
+
+.drop-down-component button {
+    width: 100% !important;
+}
+
+.agreement-table-edit {
+    table-layout: fixed;
+}
+
+.agreement-list-row td {
+    vertical-align: middle;
+}
+
+.agreement-list-row .icon-td {
+    padding: 0 0 0 0.75rem;
+}
+
+.agreement-list-row label {
+    padding-left: 5px;
+    vertical-align: sub;
+    margin-bottom: 0;
+}
+
+.agreement-list-row th span {
+    vertical-align: sub;
+}
+
+.agreement-edit-access {
+    text-align: center;
+}
+
+.agreement-edit-access-container {
+    display: inline-block;
+    vertical-align: inherit;
+    padding: 0, 10px, 0, 10px;
+    padding: 5px;
+}
+
+.lock-container {
+    color: rgba(235, 235, 20, 0.753);
+    display: inline-block;
+}
+
+.lock-open-container {
+    color: rgba(28, 197, 28, 0.856);
+    display: inline-block;
+}
+
+.agreement-edit-access-container:hover svg, .agreement-edit-access-container:hover label {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.agreement-view-access-title {
+    display: inline;
+    vertical-align: text-bottom;
+}

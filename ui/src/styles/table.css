@@ -1,0 +1,50 @@
+.table-layout-fixed {
+    table-layout: fixed;
+}
+
+/* Force table columns to take as small place as possible */
+/* Helpful when you need to automatically reallocate free space between columns */
+table.shrink-columns th,
+table.shrink-columns td,
+table td.shrink,
+table th.shrink {
+    width: 1px;
+}
+
+table.interactive {
+    --row-hover-bg: var(--control-bg);
+    --row-active-bg: var(--table-row-active-bg);
+}
+
+table.interactive > tbody > tr {
+    transition: 0.2s ease background-color;
+}
+
+table.interactive > tbody > tr:not(.non-interactive) {
+    cursor: pointer;
+}
+
+table.interactive > tbody > tr:not(.active):not(.non-interactive):hover {
+    background-color: var(--row-hover-bg);
+}
+
+table tbody > tr.active {
+    background-color: var(--table-row-active-bg);
+}
+
+table tbody > tr.inactive {
+    background-color: var(--table-row-inactive-color);
+}
+
+table.clickable > tbody > tr {
+    transition: 0.5s ease transform, 0.2s ease background-color;
+}
+
+table.interactive.clickable > tbody > tr:not(.non-interactive):active {
+    transform: translateY(5px);
+}
+
+table th.center-vertically,
+table td.center-vertically {
+    vertical-align: middle;
+}

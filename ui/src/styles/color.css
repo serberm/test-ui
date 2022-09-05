@@ -1,0 +1,43 @@
+.color-white {
+    color: #fff;
+}
+
+.color-danger {
+    color: var(--danger);
+}
+
+.color-success {
+    color: var(--success);
+}
+
+.color-warning {
+    color: var(--warning);
+}
+
+.color-primary {
+    color: var(--primary);
+}
+
+.color-secondary {
+    color: var(--text-secondary);
+}
+
+.color-accent1 {
+    color: var(--accent1);
+}
+
+.color-accent2 {
+    color: var(--accent2);
+}
+
+.color-accent3 {
+    color: var(--accent3);
+}
+
+.color-accent4 {
+    color: var(--accent4);
+}
+
+.color-accent5 {
+    color: var(--accent5);
+}
