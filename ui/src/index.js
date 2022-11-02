@@ -1,4 +1,8 @@
 import React from 'react';
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+import { createTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
+import { composeWithDevTools } from '@redux-devtools/extension';
 import thunk from 'redux-thunk';
 import { render } from 'react-dom';
 import { Iterable } from 'immutable';
@@ -6,7 +10,6 @@ import { Provider } from 'react-redux';
 import { createLogger } from 'redux-logger';
 import { applyMiddleware, createStore } from 'redux';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { fetchAppConfig } from './actions';
 import { isDev } from './utils/helpers';
 import rootReducer from './reducers';
 import App from './containers/App';
@@ -28,21 +31,50 @@ const loggerMiddleware = createLogger({
 
         return newState;
     },
-    collapsed: true
+    collapsed: true,
 });
 
-const store = createStore(rootReducer, applyMiddleware(...[
-    thunk,
-    isDev() && loggerMiddleware
-].filter(Boolean)));
+const store = createStore(
+    rootReducer,
+    composeWithDevTools(
+        applyMiddleware(...[thunk, isDev() && loggerMiddleware].filter(Boolean))
+    )
+);
 
-store.dispatch(fetchAppConfig());
+const client = new ApolloClient({
+    uri: process.env.REACT_APP_API_ROOT,
+    cache: new InMemoryCache(),
+});
+
+const theme = createTheme({
+    palette: {
+        primary: {
+            // Purple and green play nicely together.
+            main: '#4d7cfe',
+        },
+        secondary: {
+            // This is green.A700 as hex.
+            main: '#6c757d',
+        },
+        background: {
+            paper: '#29354c',
+            'default': '#223145',
+        },
+        text: {
+            primary: '#e8e8e8'
+        },
+    },
+});
 
 render(
-    <Provider store={store}>
-        <Router>
-            <Route path={'/'} component={App} />
-        </Router>
-    </Provider>,
+    <ThemeProvider theme={theme}>
+        <ApolloProvider client={client}>
+            <Provider store={store}>
+                <Router>
+                    <Route path={'/'} component={App} />
+                </Router>
+            </Provider>
+        </ApolloProvider>
+    </ThemeProvider>,
     document.getElementById('app')
 );
